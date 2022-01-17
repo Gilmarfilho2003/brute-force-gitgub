@@ -1,7 +1,4 @@
-import python
 import os 
-import webbrosser
-import cookielib
 import github 
 
 print ('''
