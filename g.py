@@ -31,7 +31,6 @@ def github():
         print('\rPassword [==] {} '.format(password).rstrip("\n"))
         sys.stdout.flush
         url = "https://github.com/login"
-        Sec-CH-UA-Platform: "Android"
 
         try:
             brows.open(url, timeout=5)
